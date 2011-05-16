@@ -1,0 +1,3 @@
+A Python script to extract date format from a mapfile.
+
+These are then written to a JavaScript file to create a map with a datepicker.
