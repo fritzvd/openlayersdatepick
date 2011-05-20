@@ -32,8 +32,9 @@
 					new OpenLayers.Control.PanZoomBar(),
 					new OpenLayers.Control.LayerSwitcher(),
 					new OpenLayers.Control.Attribution()],
-					allOverlays: true
-
+					allOverlays: true,
+					maxResolution: "auto",
+					maxExtent: new OpenLayers.Bounds(51, -4, 52, -6),
 			} );
             var wms = new OpenLayers.Layer.WMS(
             "OpenLayers WMS",
