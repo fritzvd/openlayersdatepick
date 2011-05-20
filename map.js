@@ -1,6 +1,6 @@
 
         $(function() {
-	        $('.date').datepick({onSelect: showDate});
+	        $('#date').datepicker({onSelect: showDate});
         });
         
         function showDate(date){
