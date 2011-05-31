@@ -7,7 +7,7 @@
           $('#map')
           
             var dateLayer = new OpenLayers.Layer.WMS($.format.date('' + date, 'MMdd'),
-                "http://geoportal.waterqualitymap.eu/cgi-bin/mapserv?map=chl2011.map",
+                "http://geoportal.waterqualitymap.eu/cgi-bin/mapserv?map=algae2010.map",
                 {
                     layers: '' + $.format.date('' + date, 'MMdd'),
                     format: 'image/png',
@@ -27,14 +27,15 @@
           $('#map')
           
            map = new OpenLayers.Map ("map", {
+				restrictedExtent: new OpenLayers.Bounds(-3, 51,
+                                              6, 53),
 				controls:[
 					new OpenLayers.Control.Navigation(),
 					new OpenLayers.Control.PanZoomBar(),
 					new OpenLayers.Control.LayerSwitcher(),
 					new OpenLayers.Control.Attribution()],
 					allOverlays: true,
-					maxResolution: "auto",
-					maxExtent: new OpenLayers.Bounds(51, -4, 52, -6),
+					
 			} );
             var wms = new OpenLayers.Layer.WMS(
             "OpenLayers WMS",
