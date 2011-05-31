@@ -28,7 +28,7 @@
           
            map = new OpenLayers.Map ("map", {
 				restrictedExtent: new OpenLayers.Bounds(-3, 51,
-                                              6, 53),
+                                              6, 53.0),
 				controls:[
 					new OpenLayers.Control.Navigation(),
 					new OpenLayers.Control.PanZoomBar(),
